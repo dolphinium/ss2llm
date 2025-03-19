@@ -1,0 +1,7 @@
+google-generativeai>=0.3.1
+pillow>=10.0.0
+pyscreenshot>=3.1
+numpy>=1.24.0
+python-dotenv>=1.0.0
+flask>=2.0.0
+watchdog>=3.0.0 
