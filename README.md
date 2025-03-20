@@ -20,29 +20,80 @@ This application uses Google's Gemini 2.0 Flash model to process quiz questions 
 - Python 3.8 or higher
 - Google API key with access to Gemini models
 
-## Installation
+## Detailed Installation Guide
 
-1. Clone this repository or download the source code.
 
-2. Install the required dependencies:
+### 1. Getting the Application
+
+#### Using Git 
+1. Install Git if you haven't:
+   - Visit https://git-scm.com/download/mac
+   - Download and install Git
+2. Open Terminal and run:
+   ```bash
+   git clone https://github.com/yourusername/ai-quiz-answering-app.git
+   cd ai-quiz-answering-app
    ```
+
+### 2. Setting up Python Environment
+
+Choose ONE of the following methods:
+
+#### Option A: Using venv (Python's built-in virtual environment)
+```bash
+# Create virtual environment
+python3 -m venv venv
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Install dependencies
+pip install -r requirements.txt
+```
+
+#### Option B: Using Conda(Recommended)
+Open Terminal and run:
+   ```bash
+   # Create conda environment
+   conda create -n quiz-app python=3.8
+   
+   # Activate conda environment
+   conda activate quiz-app
+   
+   # Install dependencies
    pip install -r requirements.txt
    ```
 
-3. Create a `.env` file in the root directory:
-   ```
-   cp .env.example .env
-   ```
+### 3. Setting up Google API Key
 
-4. Get a Google Gemini API key from the Google AI Studio (https://makersuite.google.com/app/apikey) and add it to the `.env` file:
+1. Visit Google AI Studio: https://makersuite.google.com/app/apikey
+2. Sign in with your Google account
+3. Click "Create API Key"
+4. Copy your API key
+5. Create a `.env` file in the application folder:
+6. Open `.env` file in any text editor and add your API key:
    ```
    GOOGLE_API_KEY=your_api_key_here
    ```
 
+### 4. Configuring macOS Screenshot Settings
+
+1. Press `Command (⌘) + Shift + 5` to open Screenshot toolbar
+2. Click "Options"
+3. Under "Save to", select "Desktop"
+4. Make sure "Show Floating Thumbnail" is unchecked for instant processing
+5. Close the options menu
+
 ## Usage
 
 1. Start the application:
-   ```
+   ```bash
+   # If using venv:
+   source venv/bin/activate
+   python app.py
+
+   # If using conda:
+   conda activate quiz-app
    python app.py
    ```
 
@@ -62,15 +113,11 @@ This application uses Google's Gemini 2.0 Flash model to process quiz questions 
 
 For a simpler interaction, you can also use the CLI version:
 
-```
+```bash
 python cli.py
 ```
 
 The CLI version will monitor for screenshots and output the answers directly in the terminal.
-
-## Customization
-
-You can customize the model's behavior by modifying the prompt in the `process_image` function in `app.py`.
 
 ## How It Works
 
