@@ -1,0 +1,57 @@
+# Cursor Rules for AI Quiz Answering App
+
+## Project Patterns
+
+### File Naming
+- Screenshot files follow macOS pattern: "Screenshot YYYY-MM-DD at HH.MM.SS"
+- Python files use snake_case
+- Template files use kebab-case
+
+### Code Style
+- Follow PEP 8 guidelines
+- Use type hints where possible
+- Document all functions with docstrings
+- Keep functions focused and small
+
+### Project Structure
+- Keep main logic in app.py
+- CLI interface in cli.py
+- Templates in templates/
+- Documentation in memory-bank/
+- Configuration in .env
+
+### Development Workflow
+- Test changes locally first
+- Update documentation with changes
+- Keep memory bank in sync
+- Monitor performance impacts
+
+## User Preferences
+- Prefer Conda for environment management
+- Use VSCode/Cursor for development
+- Keep UI simple and clean
+- Maintain clear error messages
+
+## Known Challenges
+- Screenshot timing sensitivity
+- API rate limiting
+- Memory management for history
+- UI update latency
+
+## Best Practices
+- Always validate API key presence
+- Clean up processed screenshots
+- Handle network errors gracefully
+- Provide clear user feedback
+
+## Tool Usage
+- Use watchdog for file monitoring
+- Flask for web interface
+- Pillow for image handling
+- python-dotenv for configuration
+
+## Project Intelligence
+- Critical paths require error handling
+- UI updates should be non-blocking
+- Keep processing pipeline efficient
+- Maintain clear status indicators 
