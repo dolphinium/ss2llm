@@ -14,6 +14,7 @@ import concurrent.futures
 import threading
 from functools import partial
 import queue
+import google.generativeai.types as types
 
 # Load environment variables
 load_dotenv()
@@ -29,7 +30,7 @@ if not GOOGLE_API_KEY:
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Initialize the Gemini model
-model = genai.GenerativeModel('gemini-2.0-flash-001')
+model = genai.GenerativeModel('gemini-2.0-flash-lite', generation_config=types.GenerationConfig(temperature=0.0))
 
 # Default macOS screenshot location
 DEFAULT_SCREENSHOT_DIR = os.path.expanduser("~/Desktop")

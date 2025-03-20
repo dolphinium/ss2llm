@@ -2,6 +2,10 @@
 
 This application uses Google's Gemini 2.0 Flash model to process quiz questions from screenshots and provide answers. The app monitors for macOS screenshots, processes them with the Gemini multimodal model, and displays the answers in real-time.
 
+## Demo
+
+![Demo of AI Quiz Assistant](demo.gif)
+
 ## Features
 
 - Automatic detection of macOS screenshots (using Command + Shift + 4)
