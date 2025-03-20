@@ -1,6 +1,15 @@
+# Repository settings managed by https://github.com/apps/settings
 repository:
+  # Repository name
   name: ss2llm
+
+  # Repository description
   description: "A macOS application that uses Google's Gemini AI to automatically capture, analyze, and answer quiz questions from screenshots in real-time. Features both web and CLI interfaces."
+
+  # Repository homepage URL (optional)
+  # homepage: https://your-website.com
+
+  # Repository topics
   topics:
     - python
     - google-gemini-ai
@@ -22,3 +31,20 @@ repository:
     - automation
     - ai-applications
     - developer-tools
+
+  # Additional settings
+  private: false
+  has_issues: true
+  has_projects: true
+  has_wiki: true
+  has_downloads: true
+  default_branch: main
+
+  # Allow squash-merging pull requests
+  allow_squash_merge: true
+  
+  # Allow merging pull requests with a merge commit
+  allow_merge_commit: true
+  
+  # Allow rebase-merging pull requests
+  allow_rebase_merge: true
