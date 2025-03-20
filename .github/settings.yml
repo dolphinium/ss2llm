@@ -1,0 +1,24 @@
+repository:
+  name: ss2llm
+  description: "A macOS application that uses Google's Gemini AI to automatically capture, analyze, and answer quiz questions from screenshots in real-time. Features both web and CLI interfaces."
+  topics:
+    - python
+    - google-gemini-ai
+    - computer-vision
+    - ai-assistant
+    - multimodal-ai
+    - screenshot-detection
+    - quiz-solver
+    - real-time-processing
+    - image-analysis
+    - question-answering
+    - macos
+    - cli-application
+    - web-interface
+    - desktop-application
+    - flask
+    - education-tools
+    - productivity-tools
+    - automation
+    - ai-applications
+    - developer-tools
