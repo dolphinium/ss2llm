@@ -127,6 +127,35 @@ The CLI version will monitor for screenshots and output the answers directly in 
 4. The model generates an answer based on its understanding of the question
 5. The answer is displayed in the web interface or CLI
 
+## Tools and Technologies Used
+
+### Core Technologies
+- **Python 3.8+**: Main programming language
+- **Google Gemini 2.0 Flash**: Advanced multimodal AI model for image and text processing
+- **Flask**: Lightweight web framework for the user interface
+- **Conda/venv**: Environment management
+
+### Key Libraries
+- **Watchdog**: For real-time filesystem monitoring of screenshots
+- **Pillow (PIL)**: Image processing and manipulation
+- **python-dotenv**: Environment variable management
+- **google.generativeai**: Official Google Generative AI Python library
+
+### Frontend
+- **HTML/CSS**: Basic structure and styling
+- **JavaScript**: Real-time updates and dynamic content
+- **WebSocket**: For real-time communication between server and client
+
+### Development Tools
+- **Git**: Version control
+- **Visual Studio Code/Cursor**: Recommended IDE
+- **macOS Screenshot Utility**: Native screenshot capture
+
+### Testing and Quality
+- **pytest**: Unit testing framework
+- **flake8**: Code linting
+- **mypy**: Static type checking
+
 ## Limitations
 
 - The accuracy of the answers depends on the capabilities of the Gemini 2.0 Flash model
